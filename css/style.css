@@ -1,0 +1,101 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+body{
+  /* Typography Declarations */
+  color: #222222;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background: #8A8791;
+}
+li a { 
+  text-decoration: none; color: white; 
+}
+li a:hover {
+  text-decoration: none; color: black;
+}
+.content-footer,
+.masthead-heading,
+.masthead-intro{
+  color: white;
+  text-align: center;
+}
+.introduction-section > p,
+.location-section > p,
+.questions-section > p,
+.job-section > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
+.masthead{
+  padding: 2em 0;
+    background-image: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&q=80&fm=jpg&s=ea7623efb1f5115a216e43130cf1f524');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #2C2B2E
+}
+.masthead-intro{
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+.masthead-heading{
+  margin-top: -0.2em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
+.introduction-section, .location-section, .questions-section, .job-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
+.content-footer{
+  background: #2C2B2E;
+}
+.content-footer .social>li{
+  display: inline-block;
+}
+.content-footer> p> a { 
+  text-decoration: none; color: white; 
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
